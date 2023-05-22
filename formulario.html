@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tickets</title>
+
+    <link rel="shortcut icon" href="./imagenesDiaDos/icon_imagen.png" type="image/x-icon">
+    
+     <!--Conexion CSS-->
+     <link rel="stylesheet" href="./estilos/formulario.css">
+
+     <!--Conexion GoogleFonts-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+ 
+     <!--Conexion FontAwesome-->
+     <script src="https://kit.fontawesome.com/a33c894cad.js" crossorigin="anonymous"></script>
+ 
+     <!--Animate.css conexion-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+     <!--BOOTSTRAP-->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <header>
+      <a href="#index.html"><img id="logo_header" src="./imagenesDiaDos/logofinal.png" alt="logo fresh beats festival"></a>
+      <nav>
+        <ul id="hipervinculos_lista">
+            <li><a href=".pagprincipal.html" class="hipervinculos_header">Home</a></li>
+            <li><a href=".dia_uno.html" class="hipervinculos_header">Day One</a></li>
+            <li><a href=".dia_dos.html" class="hipervinculos_header">Day Two</a></li>
+            <li><a href=".dia_tres.html" class="hipervinculos_header">Day Three</a></li>
+            <li><a href=".formulario.html" class="hipervinculos_header">Tickets</a></li>
+        </ul>
+      </nav>
+  </header>
+
+  <main>
+      
+      <h1 class="animate__animated animate__pulse">COMPRA TU TICKET</h1>
+
+      <form action="#" method="get" id="conteiner1">
+          <fieldset class="container2">
+              <legend class="sub_titulosformulario">Carga tus datos</legend>
+              <label for="name" class="titulos_casillas " >Nombre</label>  <!-- NOMBRE -->
+              <input type="text" class="name casillas"  id="nombre" >
+
+              <label for="lastname" class="titulos_casillas " >Apellido</label><!--APELLIDO-->
+              <input type="text" class="lastname casillas"  id="apellido">
+
+
+              <label for="dni" class="titulos_casillas " >DNI</label><!-- DNI -->
+              <input type="number" class="dni casillas"  min=0 id="dni" >
+
+
+              <label for="phone" class="titulos_casillas">Telefono</label><!-- TELEFONO -->
+              <input type="number" class="phone casillas"   id="telefono">
+
+
+              <label for="email" class="titulos_casillas"   >Mail</label><!--MAIL-->
+              <input type="email" class="email casillas"  id="correo">
+
+          </fieldset>
+
+          <fieldset class="container2">
+              <legend class="sub_titulosformulario">Selecciona el día y el metodo de pago</legend>
+              <label for="day" class="titulos_casillas">Elegí el día</label>
+              <select name="day" class="day casillas_menu" >
+                  <option selected>Day One</option>
+                  <option>Day Two</option>
+                  <option>Day Three</option>
+              </select>
+
+
+              <label for="ticket" class="titulos_casillas">Entradas</label>
+              <select name="ticket" class="ticket casillas_menu">
+                  <option selected>General - $15000</option>
+                  <option> VIP - $19000</option>
+                  <option > All Acess - $26000 </option>
+              </select>
+
+              <label for="amount" class="titulos_casillas">Ingresa la cantidad de entradas</label>
+
+              <input type="number" class="amount casillas_menu" autocomplete="off" id ="entradas">
+
+
+              <label for="pay" class="titulos_casillas">Medios de pago</label>
+              <select name="pay" class="pay casillas_menu" id="medio">
+                  <option value="ninguno">...</option>
+                  <option value="debito">Tarjeta de Debito</option>
+                  <option value="Credito" >Tarjeta de Credito </option>
+                  <option value="virtual">Billetera Virtual</option>
+              </select>   
+          </fieldset>
+         
+       
+         
+         
+          <fieldset>
+          <button type="reset" class="botones" id="reseteo">Borrar Campos</button>
+          <button type="button" class="botones" id="obtenerDatos">Obtener Datos</button>
+          <button type="submit" class="botones" onclick="validarFormulario()" >Enviar</button>
+          </fieldset>
+
+      </form> 
+      
+
+  </main>
+  
+    <footer>
+      <section id="footer_redessociales">
+
+          <h3>Redes Sociales</h3>
+
+          <nav>
+              <ul>
+                <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook iconos_redes"></i></a></li>
+                <li><a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-square-twitter iconos_redes" ></i></a></li>
+                <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram iconos_redes"></i></a></li>
+                <li><a href="https://www.tiktok.com/" target="_blank"><i class="fa-brands fa-tiktok iconos_redes"></i></i></a></li>
+                <li><a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube iconos_redes"></i></i></a></li>
+              </ul>
+            </nav>
+      </section>
+  </footer>
+
+
+  <script src="./javaScript/formulario.js"></script>
+  <script src="./javaScript/api.js"></script>
+</body>
+</html>

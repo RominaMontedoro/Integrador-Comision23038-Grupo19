@@ -1,0 +1,247 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+
+}
+
+/* HEADER */
+
+header{
+  
+    background: linear-gradient(0deg, rgba(259,250,250,0.8) 5%, rgba(0,0,0,1) 25%);
+    /*position: sticky;
+    top: 0;*/
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+#logo_header{
+    width: 40%;
+}
+main{
+    padding: 4rem 2rem;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+    padding: 4rem;
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-size: 4rem;
+    animation-duration: 10s;
+    animation-name: animatepulse;
+    animation-iteration-count: infinite;
+}
+
+
+
+#conteiner1{
+    background-color: rgb(255, 255, 255);
+    font-family: 'Titillium Web', sans-serif;
+    width: 90%;
+    max-width: 700px;
+    box-shadow: 0 5px 10px -5px rgba(0,0,0,1);
+    padding: 1rem;
+}
+
+.container2{
+    font-family: 'Titillium Web', sans-serif;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+p {
+     color: green;
+     display: none;
+}
+.sub_titulosformulario{
+    font-size: 2rem;
+    color: #f32ff3;
+    text-align: center;
+}
+
+.titulos_casillas{
+    padding: 0.5rem;
+}
+
+.casillas{
+    border-radius: 4px;
+    width: 70%;
+    font-size: 1rem;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+
+.casillas_menu{
+    text-align: center;
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.botones{
+    background: #f32ff3;
+    font-size: 15px;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+.botones a{
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Titillium Web', sans-serif;
+    text-align: center;
+}
+
+.botones:hover{
+    background-color: #ee5cee;
+    color:#ffffff;
+    font-size: 20px;
+}
+
+header ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem 1rem;
+   
+}
+main{
+    padding: 2rem;
+}
+header a{
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.5rem;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    }
+input[type=number] { -moz-appearance:textfield; }
+
+header a:hover{
+    color:#8C52FF;
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+h1 {
+    text-align: center;
+    padding: 4rem;
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-size: 2.5rem;
+}
+
+
+section h3{
+    text-align: center;
+    padding: 4rem;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2.5rem;
+}
+
+label { 
+     font-family: 'Times New Roman', Times, serif;
+     font-size: large;
+}
+/* FOOTER */ 
+footer{
+   
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 91%, rgba(255,255,255,1) 100%);
+    list-style: none;
+    padding-bottom: 4rem;
+    display: flex;
+    gap: 2rem 2rem;
+    justify-content: space-evenly; 
+}
+
+footer h3{
+    color: #f32ff3;
+}
+
+#footer_redessociales ul{
+    list-style: none;
+    padding-bottom: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2rem 2rem;
+
+}
+
+.iconos_redes{
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+}
+
+.iconos_redes:hover{
+    color: #f32ff3;
+    cursor: pointer;
+}
+
+div{
+    color: red;
+}
+
+.boton_ticket{
+    border: none;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.boton_ticket button{
+    background: #f502f5cc;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border-radius: 0.7rem;
+    
+}
+
+.boton_ticket a{
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Titillium Web', sans-serif;
+    text-align: center;
+}
+
+.boton_ticket button:hover{
+    background-color: #ee5cee;
+    font-size:1.6rem;
+}
+
+/*FORMULARIO */
+
+.centrarBoton { 
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+
+}
+
+.centrarBoton button { 
+    background-color: rgb(206, 6, 189);
+    font-size: 35px;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    border-top: 1rem;
+}
+
+.centrarBoton:hover  { 
+    background: rgb(231, 21, 214);
+
+}

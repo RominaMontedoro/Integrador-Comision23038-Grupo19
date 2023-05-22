@@ -5,45 +5,33 @@
 }
 
 header{
-    background: rgb(0,0,0);
+  
     background: linear-gradient(0deg, rgba(259,250,250,0.8) 5%, rgba(0,0,0,1) 25%);
-    padding: 0.7rem 2rem 2.5rem;
-    position: sticky;
-    top: 0;
+    /*position: sticky;
+    top: 0;*/
     display: flex;
-    justify-content: space-between;
-    align-items: top;
-    z-index: 5;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 100%;
 }
 
-#logoheader{
-    height: 5rem;
-    background: rgb(0,0,0,0);
-    padding-left: 3rem;
+#logo_header{
+    width: 40%;
 }
+
 
 header ul{
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center; 
-    background: rgb(0,0,0,0);
-    padding-right: 2rem;
-    margin-top: 1.5rem;
+    gap: 1rem 1rem;
+   
 }
 
-header nav{
-    background: rgb(0,0,0,0);
-}
 
-.header_item{
-    background: rgb(0,0,0,0);
-}
-
-.hipervinculos_header{
+header a{
     text-decoration: none;
-    background: rgb(0,0,0,0);
     color: #ffffff;
     font-family: 'Bebas Neue', cursive;
     font-size: 1.5rem;
@@ -52,7 +40,6 @@ header nav{
 header a:hover{
     color:#8C52FF;
     font-weight: bold;
-    font-size: 1.7rem;
 }
 
 h1{

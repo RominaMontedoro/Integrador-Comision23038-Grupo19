@@ -19,6 +19,7 @@ header{
 #logoheader{
     height: 5rem;
     background: rgb(0,0,0,0);
+    padding-left: 3rem;
 }
 
 header ul{

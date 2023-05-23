@@ -109,11 +109,11 @@ main{
 
 .dia{
     text-decoration: none;
-    padding: 0rem 5rem;
+    padding: 0rem 3rem;
     background-color: #000;
     font-family: 'Titillium Web', sans-serif;
     color: #ee5cee;
-    font-size: 1.5rem
+    font-size: 1rem
 }
 
 .titulo_imagen{
